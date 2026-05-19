@@ -188,6 +188,9 @@
   .z-\[-1\] {
     z-index: -1;
   }
+  .mt-\[20px\] {
+    margin-top: 20px;
+  }
   .block {
     display: block;
   }
@@ -196,6 +199,9 @@
   }
   .hidden {
     display: none;
+  }
+  .table {
+    display: table;
   }
   .h-7 {
     height: calc(var(--spacing) * 7);
@@ -218,8 +224,14 @@
   .h-\[100px\] {
     height: 100px;
   }
+  .h-\[120px\] {
+    height: 120px;
+  }
   .h-\[300px\] {
     height: 300px;
+  }
+  .h-full {
+    height: 100%;
   }
   .w-\[14\.25px\] {
     width: 14.25px;
@@ -247,6 +259,12 @@
   }
   .w-full {
     width: 100%;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -278,6 +296,9 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .gap-\[30px\] {
+    gap: 30px;
+  }
   .rounded-\[40px\] {
     border-radius: 40px;
   }
@@ -294,8 +315,14 @@
   .bg-\[\#A98C64\] {
     background-color: #A98C64;
   }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
+  }
+  .text-center {
+    text-align: center;
   }
   .text-\[12px\] {
     font-size: 12px;
@@ -316,6 +343,10 @@
     --tw-font-weight: 500;
     font-weight: 500;
   }
+  .font-\[600\] {
+    --tw-font-weight: 600;
+    font-weight: 600;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -329,11 +360,18 @@
   .text-\[\#756D6D\] {
     color: #756D6D;
   }
+  .text-\[14\] {
+    color: 14;
+  }
   .text-white {
     color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .lg\:top-\[30px\] {
     @media (width >= 64rem) {
@@ -363,6 +401,16 @@
   .lg\:mx-auto {
     @media (width >= 64rem) {
       margin-inline: auto;
+    }
+  }
+  .lg\:mt-100 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 100);
+    }
+  }
+  .lg\:mt-\[100px\] {
+    @media (width >= 64rem) {
+      margin-top: 100px;
     }
   }
   .lg\:flex {
@@ -400,6 +448,11 @@
       height: 200px;
     }
   }
+  .lg\:h-\[300px\] {
+    @media (width >= 64rem) {
+      height: 300px;
+    }
+  }
   .lg\:h-\[549px\] {
     @media (width >= 64rem) {
       height: 549px;
@@ -430,6 +483,16 @@
       width: 274px;
     }
   }
+  .lg\:w-\[300px\] {
+    @media (width >= 64rem) {
+      width: 300px;
+    }
+  }
+  .lg\:w-\[390px\] {
+    @media (width >= 64rem) {
+      width: 390px;
+    }
+  }
   .lg\:w-\[549px\] {
     @media (width >= 64rem) {
       width: 549px;
@@ -455,9 +518,44 @@
       justify-content: space-between;
     }
   }
+  .lg\:gap-0 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:gap-8 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 8);
+    }
+  }
+  .lg\:gap-10 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:gap-40 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:gap-\[50px\] {
+    @media (width >= 64rem) {
+      gap: 50px;
+    }
+  }
+  .lg\:gap-\[70px\] {
+    @media (width >= 64rem) {
+      gap: 70px;
+    }
+  }
   .lg\:gap-\[200px\] {
     @media (width >= 64rem) {
       gap: 200px;
+    }
+  }
+  .lg\:text-start {
+    @media (width >= 64rem) {
+      text-align: start;
     }
   }
   .lg\:text-\[18px\] {
@@ -465,9 +563,19 @@
       font-size: 18px;
     }
   }
+  .lg\:text-\[20px\] {
+    @media (width >= 64rem) {
+      font-size: 20px;
+    }
+  }
   .lg\:text-\[24px\] {
     @media (width >= 64rem) {
       font-size: 24px;
+    }
+  }
+  .lg\:text-\[48px\] {
+    @media (width >= 64rem) {
+      font-size: 48px;
     }
   }
   .lg\:text-\[60px\] {
@@ -485,11 +593,17 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
