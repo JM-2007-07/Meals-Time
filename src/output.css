@@ -349,6 +349,9 @@
   .h-\[16px\] {
     height: 16px;
   }
+  .h-\[18px\] {
+    height: 18px;
+  }
   .h-\[20px\] {
     height: 20px;
   }
@@ -379,6 +382,12 @@
   .h-\[120px\] {
     height: 120px;
   }
+  .h-\[161\] {
+    height: 161;
+  }
+  .h-\[161px\] {
+    height: 161px;
+  }
   .h-\[176px\] {
     height: 176px;
   }
@@ -402,6 +411,9 @@
   }
   .h-\[301px\] {
     height: 301px;
+  }
+  .h-\[326px\] {
+    height: 326px;
   }
   .h-\[433px\] {
     height: 433px;
@@ -432,6 +444,9 @@
   }
   .w-\[20px\] {
     width: 20px;
+  }
+  .w-\[24px\] {
+    width: 24px;
   }
   .w-\[35px\] {
     width: 35px;
@@ -475,6 +490,9 @@
   .w-\[184px\] {
     width: 184px;
   }
+  .w-\[195px\] {
+    width: 195px;
+  }
   .w-\[205px\] {
     width: 205px;
   }
@@ -493,8 +511,14 @@
   .w-\[290px\] {
     width: 290px;
   }
+  .w-\[295px\] {
+    width: 295px;
+  }
   .w-\[300px\] {
     width: 300px;
+  }
+  .w-\[305px\] {
+    width: 305px;
   }
   .w-\[307px\] {
     width: 307px;
@@ -504,6 +528,9 @@
   }
   .w-\[350px\] {
     width: 350px;
+  }
+  .w-\[352px\] {
+    width: 352px;
   }
   .w-\[355px\] {
     width: 355px;
@@ -658,6 +685,9 @@
   .gap-\[0\] {
     gap: 0;
   }
+  .gap-\[2\] {
+    gap: 2;
+  }
   .gap-\[6\] {
     gap: 6;
   }
@@ -666,6 +696,9 @@
   }
   .gap-\[10px\] {
     gap: 10px;
+  }
+  .gap-\[15px\] {
+    gap: 15px;
   }
   .gap-\[20px\] {
     gap: 20px;
@@ -770,6 +803,9 @@
   }
   .bg-\[\#A98C64\] {
     background-color: #A98C64;
+  }
+  .bg-\[\#B89683\] {
+    background-color: #B89683;
   }
   .bg-\[\#DFCCB7\] {
     background-color: #DFCCB7;
@@ -1205,6 +1241,11 @@
       height: 151px;
     }
   }
+  .lg\:h-\[161px\] {
+    @media (width >= 64rem) {
+      height: 161px;
+    }
+  }
   .lg\:h-\[200px\] {
     @media (width >= 64rem) {
       height: 200px;
@@ -1270,6 +1311,11 @@
       width: 117px;
     }
   }
+  .lg\:w-\[160px\] {
+    @media (width >= 64rem) {
+      width: 160px;
+    }
+  }
   .lg\:w-\[190\.02px\] {
     @media (width >= 64rem) {
       width: 190.02px;
@@ -1293,6 +1339,11 @@
   .lg\:w-\[307px\] {
     @media (width >= 64rem) {
       width: 307px;
+    }
+  }
+  .lg\:w-\[352px\] {
+    @media (width >= 64rem) {
+      width: 352px;
     }
   }
   .lg\:w-\[400px\] {
@@ -1353,6 +1404,16 @@
   .lg\:w-\[982px\] {
     @media (width >= 64rem) {
       width: 982px;
+    }
+  }
+  .lg\:w-\[1270px\] {
+    @media (width >= 64rem) {
+      width: 1270px;
+    }
+  }
+  .lg\:w-\[1280px\] {
+    @media (width >= 64rem) {
+      width: 1280px;
     }
   }
   .lg\:w-\[1320px\] {
